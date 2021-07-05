@@ -1,0 +1,20 @@
+provincias:
+-H "{{apikey}}"
+-G https://api.goolzoom.com/v1/cadastre/provinces
+----
+municipios:
+-H "{{apikey}}"
+-G https://api.goolzoom.com/v1/cadastre/municipalities/{{codprov}}
+----
+municipios:
+-H "{{apikey}}"
+-G https://api.goolzoom.com/v1/cadastre/municipalities/{{codprov}}
+----
+calles:
+-H "{{apikey}}"
+-G https://api.goolzoom.com/v1/cadastre/streets/{{codmun}}
+----
+refcatastral:
+-H "{{apikey}}"
+-G https://api.goolzoom.com/v1/cadastre/cadastralreference/{{ref}}/data?language=es
+----
